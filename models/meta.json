@@ -1,0 +1,1 @@
+{"best_model": "Logistic Regression", "features": ["age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"]}
