@@ -1,4 +1,4 @@
-# 🫀 Explainable Heart Disease Risk Predictor
+ Explainable Heart Disease Risk Predictor
 
 A small end-to-end ML project: compare three classifiers on the UCI heart disease data, explain predictions with **SHAP**, and serve it through a **Streamlit** app where you enter patient values and see both a risk score and *why* the model produced it.
 
