@@ -1,4 +1,4 @@
- Explainable Heart Disease Risk Predictor
+# Explainable Heart Disease Risk Predictor
 
 A small end-to-end ML project: compare three classifiers on the UCI heart disease data, explain predictions with **SHAP**, and serve it through a **Streamlit** app where you enter patient values and see both a risk score and *why* the model produced it.
 
@@ -6,12 +6,12 @@ A small end-to-end ML project: compare three classifiers on the UCI heart diseas
 
 ## Demo
 
-<!-- Add a GIF or screenshot of the app here: ![demo](figures/demo.gif) -->
+![demo](figures/demo.gif)
 
 ## What it does
 
-- Cleans the 13-feature heart disease table (drops duplicates and missing rows)
-- Compares **Logistic Regression**, **Random Forest** and **XGBoost** with 5-fold stratified cross-validation, then evaluates on a held-out 20% test set
+- Cleans the 13-feature heart disease table (drops duplicates, fills missing values with the median)
+- Compares **Logistic Regression**, **Random Forest** and **Gradient Boosting** with 5-fold stratified cross-validation, then evaluates on a held-out 20% test set
 - Selects the best model by **cross-validated AUC**, not by test score, to avoid picking on the test set
 - Generates global SHAP explanations (summary and importance plots)
 - Serves a Streamlit app with a per-patient SHAP waterfall chart
